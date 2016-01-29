@@ -1,0 +1,16 @@
+{
+  "name": "bower-bootswatch-paper",
+  "version": "3.3.6",
+  "main": "css/bootstrap.css",
+  "keywords": [
+    "paper",
+    "bootstrap",
+    "twitter",
+    "bootswatch",
+    "less",
+    "css",
+    "flat",
+    "ui",
+    "theme"
+  ]
+}
