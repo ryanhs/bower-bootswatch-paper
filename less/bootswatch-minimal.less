@@ -1,4 +1,3 @@
-
 .navbar {
 	.navbar-form {
 		input[type=text] {
@@ -31,11 +30,6 @@
 		}
 	}
 }
-
-
-
-
-
 
 .nav-tabs {
   > li > a,
@@ -86,3 +80,300 @@
     margin-top: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  actually this is a css file, only a quick fix */
+
+
+/*
+Global
+============================= */
+
+body{
+	font-family:'Source Sans Pro', sans-serif;
+	color:#666;
+	font-size:10pt;
+	font-weight: 400;
+	  -webkit-font-smoothing: antialiased;
+     font-smoothing: antialiased;
+}
+
+* {
+     text-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+
+p{line-height: 24px}
+a{color:#0088cc;}
+a:hover{text-decoration: none;}
+
+h1,h2,h3,h4,h5,h6{ font-family:'Source Sans Pro', sans-serif}
+
+h1{font-size:50px; font-weight: 200; color: #555; margin-bottom: 20px;}
+h2{font-size: 30px; font-weight: 300; color:#444; margin: 30px 0}
+h3{font-size: 20px; font-weight: 400; margin: 20px 0;}
+h4{font-size:18px; font-weight: 400}
+
+/* 
+HEADER ROW STYLE
+===========================*/
+.navbar.navbar-default{
+    background: #3498DB;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav>li>a{
+	color:#ECF0F1;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+	color:#2C3E50;
+}
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color:#ECF0F1;
+	}
+}
+.navbar-default .navbar-form input[type="text"]{
+	color: #fff;
+}
+.navbar-default .navbar-form input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #016A84;
+}
+.navbar-default .navbar-form input[type="text"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #016A84;
+}
+.navbar-default .navbar-form input[type="text"]::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #f016A84ff;
+}
+.navbar-default .navbar-form input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #016A84;
+}
+.navbar-default .navbar-form input[type="text"]:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	color: #016A84;
+}
+
+
+/*Footer
+========================*/
+footer {
+    margin: 5em 0
+}
+footer li {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em
+}
+footer p {
+    clear: left;
+    margin-bottom: 0
+}
+.bs-docs-section {
+    margin-top: 6em
+}
+.bs-docs-section h1 {
+    padding-top: 100px
+}
+
+/* Responsive View
+=================================*/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	footer .container{
+		padding:15px;
+	}
+}
+
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #428bca;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #2a6496;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #999;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.breadcrumb{
+	background:#ECF0F1;
+}
+.breadcrumb li{
+	margin-left: 11px;
+    padding: 3px;
+}
+.breadcrumb li:before{
+	content:"/";
+	margin-right: 11px;
+}
+.breadcrumb li:first-child:before{
+	content:"";
+	margin:0;
+}
+.breadcrumb li.active{
+	color:#AFAFAF;
+}
+
+.dt-bootstrap .DTTT{
+	margin-left: 10px;
+	margin-top:-3px;
+	display:table;
+    border-collapse: collapse;
+    float:right;
+}
+.dt-bootstrap .DTTT_container .DTTT_button,
+.dt-bootstrap .DTTT .btn{
+	background:#fff;
+	border:1px solid #ccc;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	-o-box-shadow:none;
+	margin: 0;
+    display:table-cell;
+}
+.dt-bootstrap .DTTT_container{
+	display:table;
+}
+.dt-bootstrap .DTTT_container .DTTT_button{
+	border-collapse: collapse;
+	padding: 5px 13px;
+}
+
+table.dataTable tbody td,
+table.dataTable tbody td.sorting_1,
+table.dataTable tbody td.sorting_2,
+table.dataTable tbody td.sorting_3,
+table.dataTable tbody td li,
+table.dataTable tbody td li a,
+table.dataTable thead th,
+table.dataTable tfoot th{
+    font-size: 10pt;
+}
+table.dataTable td li{
+	list-style:none;
+}
+table.dataTable td li a{
+}
+table.dataTable td li a:hover{
+}
+
+.dt-bootstrap .DTTT_container .DTTT_button:hover:not(.DTTT_disabled),
+button.DTTT_button:hover:not(.DTTT_disabled), 
+div.DTTT_button:hover:not(.DTTT_disabled), 
+a.DTTT_button:hover:not(.DTTT_disabled){
+	background:#f2f2f2;
+	border:1px solid #ccc;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	-o-box-shadow:none;
+}
+
+.dt-bootstrap .dataTables_filter{
+	margin-top:-36px;
+	margin-right:180px;
+}
+
+.select-level-menu .btn{
+	    border: none;
+    padding: 16px;
+    color: #fff;
+    font-size: 12pt;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-shadow: none;
+    -moz-text-shadow: none;
+    -o-text-shadow: none;
+}
+.select-level-menu .btn.btn-danger{ background:#da4f49; }
+.select-level-menu .btn.btn-primary{ background:#04c; }
+.select-level-menu .btn.btn-info{ background:#49afcd; }
+.select-level-menu .btn.btn-warning{ background:#faa732; }
